@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG Drawing Pad</title>
+</head>
+
+<body>
+
+<h2>Draw Here</h2>
+
+<button onclick="clearBox()">Erase</button>
+
+<br><br>
+
+<svg id="board"
+     width="600"
+     height="350"
+     style="border:2px solid black; background:white"
+     onmousedown="startDraw(event)"
+     onmousemove="drawLine(event)"
+     onmouseup="stopDraw()">
+</svg>
+
+<script src="./drawing.js"></script>
+
+</body>
+</html>
